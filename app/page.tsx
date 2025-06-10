@@ -62,12 +62,19 @@ export default function PhysiotherapyHospital() {
       description: "Advanced techniques for chronic pain relief and improved quality of life.",
       features: ["Chronic Pain Relief", "Manual Therapy", "Exercise Therapy"],
     },
+    {
+      icon: <MapPin className="w-8 h-8 text-indigo-600" />,
+      title: "Home Visit Services",
+      description:
+        "Convenient physiotherapy treatments in the comfort of your own home for patients who cannot visit our clinic.",
+      features: ["In-Home Assessment", "Personalized Treatment", "Flexible Scheduling"],
+    },
   ]
 
   const stats = [
-    { icon: <Users className="w-6 h-6" />, value: "5000+", label: "Patients Treated" },
-    { icon: <Award className="w-6 h-6" />, value: "15+", label: "Years Experience" },
-    { icon: <Stethoscope className="w-6 h-6" />, value: "25+", label: "Expert Therapists" },
+    { icon: <Users className="w-6 h-6" />, value: "1000+", label: "Patients Treated" },
+    { icon: <Award className="w-6 h-6" />, value: "3+", label: "Years Experience" },
+    { icon: <Stethoscope className="w-6 h-6" />, value: "2", label: "Expert Therapists" },
     { icon: <Star className="w-6 h-6" />, value: "4.9", label: "Patient Rating" },
   ]
 
@@ -92,17 +99,48 @@ export default function PhysiotherapyHospital() {
               </div>
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="#services" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
+              <a
+                href="#services"
+                onClick={(e) => {
+                  e.preventDefault()
+                  document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })
+                }}
+                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              >
                 Services
               </a>
-              <a href="#about" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
+              <a
+                href="#about"
+                onClick={(e) => {
+                  e.preventDefault()
+                  document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
+                }}
+                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              >
                 About
               </a>
-              <a href="#contact" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
+              <a
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault()
+                  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+                }}
+                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              >
                 Contact
               </a>
             </nav>
-            <Button className="bg-blue-600 hover:bg-blue-700 transition-colors">Book Appointment</Button>
+            <Button
+              className="bg-blue-600 hover:bg-blue-700 transition-colors"
+              onClick={() =>
+                window.open(
+                  "https://wa.me/919363727207?text=Hi%2C%20I%20need%20an%20appointment%20at%20Allwin%20Physiotherapy%20Clinic.",
+                  "_blank",
+                )
+              }
+            >
+              Book Appointment
+            </Button>
           </div>
         </div>
       </header>
@@ -269,11 +307,11 @@ export default function PhysiotherapyHospital() {
                       <ExternalLink className="w-4 h-4" />
                     </CardTitle>
                     <CardDescription className="text-gray-300">
-                      123 Health Street
+                      17, 7th St, Perumalpuram,
                       <br />
-                      Medical District
+                      Palayamkottai, Tirunelveli,
                       <br />
-                      City, State 12345
+                      Tamil Nadu 627007
                     </CardDescription>
                   </CardHeader>
                 </Card>
@@ -291,7 +329,7 @@ export default function PhysiotherapyHospital() {
                       <br />
                       Emergency: +91 93637 27207
                       <br />
-                      Mon-Fri: 7AM-7PM
+                      Mon-Sat: 8:30AM-9:30PM
                     </CardDescription>
                   </CardHeader>
                 </Card>
@@ -301,16 +339,14 @@ export default function PhysiotherapyHospital() {
                 <Card className="bg-gray-800 border-gray-700 hover:bg-gray-750 transition-colors cursor-pointer">
                   <CardHeader
                     className="text-center"
-                    onClick={() => window.open("mailto:allwin.physiotherapy@gmail.com", "_self")}
+                    onClick={() => window.open("mailto:allwin.physiotherpy@gmail.com", "_self")}
                   >
                     <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mx-auto mb-4">
                       <Mail className="w-6 h-6 text-white" />
                     </div>
                     <CardTitle className="text-white">Email Us</CardTitle>
                     <CardDescription className="text-gray-300">
-                      allwin.physiotherapy@gmail.com
-                      <br />
-                      appointments@allwin.com
+                      allwin.physiotherpy@gmail.com
                       <br />
                       We respond within 24 hours
                     </CardDescription>
@@ -324,7 +360,12 @@ export default function PhysiotherapyHospital() {
                 <Button
                   size="lg"
                   className="bg-blue-600 hover:bg-blue-700 transition-colors"
-                  onClick={() => window.open("tel:+919363727207", "_self")}
+                  onClick={() =>
+                    window.open(
+                      "https://wa.me/919363727207?text=Hi%2C%20I%20need%20an%20appointment%20at%20Allwin%20Physiotherapy%20Clinic.",
+                      "_blank",
+                    )
+                  }
                 >
                   <Clock className="w-5 h-5 mr-2" />
                   Book Your Appointment Now

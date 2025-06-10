@@ -147,7 +147,12 @@ export function HeroCarousel() {
             </div>
             <div className="transition-all duration-500 delay-300">
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="w-full sm:w-auto"
+                  onClick={() => window.open("tel:+919363727207", "_self")}
+                >
                   <Phone className="w-5 h-5 mr-2" />
                   Call Now
                 </Button>
