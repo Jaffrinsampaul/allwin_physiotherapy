@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Allwin Physiotherapy Clinic',
-  description: 'Allwin Physiotherapy Clinic',
+  description: 'Allwin Physiotherapy Clinic Tirunelveli',
   generator: 'v0.dev',
 }
 
