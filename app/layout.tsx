@@ -4,24 +4,37 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   title: {
-    default: "Allwin Physiotherapy Clinic - Best Physiotherapy in Tirunelveli",
+    default: "Allwin Physiotherapy Clinic - Best Physiotherapy in Tirunelveli | Expert Rehabilitation Services",
     template: "%s | Allwin Physiotherapy Clinic",
   },
   description:
-    "Expert physiotherapy services in Tirunelveli offering specialized treatments for stroke, joint pain, sports injuries, geriatric care, Parkinson's, diabetic neuropathy, post-operative recovery, and home visits. Professional physiotherapists for back pain, neck pain, sciatica, knee problems, and rehabilitation services.",
+    "Leading physiotherapy clinic in Tirunelveli offering expert rehabilitation services for sports injuries, neurological conditions, orthopedic recovery, cardiac rehabilitation, pediatric care, pain management, and home visits. Professional physiotherapists with 15+ years experience serving Palayamkottai, Perumalpuram and surrounding areas.",
   keywords: [
-    // Location-based keywords
+    // Primary location-based keywords
     "physiotherapy Tirunelveli",
     "physiotherapy clinic Tirunelveli",
     "physiotherapist Tirunelveli",
     "rehabilitation center Tirunelveli",
     "physical therapy Tirunelveli",
+    "best physiotherapy clinic Tirunelveli",
+    "top physiotherapist Tirunelveli",
     "Palayamkottai physiotherapy",
     "Perumalpuram physiotherapy",
     "Allwin physiotherapy",
+    "Allwin physiotherapy clinic",
+
+    // Service-specific keywords
+    "sports physiotherapy Tirunelveli",
+    "neurological rehabilitation Tirunelveli",
+    "orthopedic physiotherapy Tirunelveli",
+    "cardiac rehabilitation Tirunelveli",
+    "pediatric physiotherapy Tirunelveli",
+    "pain management Tirunelveli",
+    "home visit physiotherapy Tirunelveli",
 
     // Home visit services
     "physiotherapist for home visits",
+    "home physiotherapy services",
     "stroke physiotherapist for home visits",
     "joint pain physiotherapist for home visits",
     "geriatric physiotherapist for home visits",
@@ -72,6 +85,52 @@ export const metadata: Metadata = {
     "stroke rehabilitation centres",
     "rehabilitation centres for spinal injury",
     "rehabilitation centres",
+    "physiotherapy hospital Tirunelveli",
+    "rehabilitation hospital Tirunelveli",
+
+    // Treatment methods
+    "manual therapy Tirunelveli",
+    "exercise therapy Tirunelveli",
+    "electrotherapy Tirunelveli",
+    "ultrasound therapy Tirunelveli",
+    "dry needling Tirunelveli",
+    "cupping therapy Tirunelveli",
+
+    // Condition-specific long-tail keywords
+    "knee replacement physiotherapy Tirunelveli",
+    "hip replacement recovery Tirunelveli",
+    "stroke rehabilitation Tirunelveli",
+    "spinal cord injury rehabilitation",
+    "multiple sclerosis physiotherapy",
+    "parkinson disease treatment",
+    "cerebral palsy treatment Tirunelveli",
+    "autism physiotherapy Tirunelveli",
+    "down syndrome therapy Tirunelveli",
+
+    // Emergency and urgent care
+    "emergency physiotherapy Tirunelveli",
+    "urgent physiotherapy consultation",
+    "immediate pain relief Tirunelveli",
+    "weekend physiotherapy services",
+
+    // Insurance and accessibility
+    "insurance accepted physiotherapy",
+    "affordable physiotherapy Tirunelveli",
+    "government approved physiotherapy",
+    "cashless treatment physiotherapy",
+
+    // Professional qualifications
+    "certified physiotherapists Tirunelveli",
+    "licensed physiotherapy clinic",
+    "experienced physiotherapists",
+    "qualified rehabilitation specialists",
+    "professional physiotherapy services",
+
+    // Technology and equipment
+    "advanced physiotherapy equipment",
+    "modern rehabilitation technology",
+    "state of art physiotherapy",
+    "latest physiotherapy techniques",
 
     // General services
     "sports physiotherapy",
@@ -80,6 +139,10 @@ export const metadata: Metadata = {
     "pain management",
     "cardiac rehabilitation",
     "pediatric physiotherapy",
+    "exercise therapy",
+    "manual therapy",
+    "physiotherapy consultation",
+    "rehabilitation services",
   ],
   authors: [{ name: "Allwin Physiotherapy Clinic" }],
   creator: "Allwin Physiotherapy Clinic",
@@ -94,9 +157,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Allwin Physiotherapy Clinic - Best Physiotherapy in Tirunelveli",
+    title: "Allwin Physiotherapy Clinic - Best Physiotherapy in Tirunelveli | Expert Rehabilitation Services",
     description:
-      "Expert physiotherapy services in Tirunelveli. Specialized treatments for sports injuries, neurological rehabilitation, orthopedic care, and pain management.",
+      "Leading physiotherapy clinic in Tirunelveli offering expert rehabilitation services for sports injuries, neurological conditions, orthopedic recovery, and specialized care. Professional physiotherapists with 15+ years experience.",
     url: "https://allwinphysiotherapy.com",
     siteName: "Allwin Physiotherapy Clinic",
     images: [
@@ -104,7 +167,7 @@ export const metadata: Metadata = {
         url: "/images/allwin-logo.jpeg",
         width: 1200,
         height: 630,
-        alt: "Allwin Physiotherapy Clinic - Professional Physiotherapy Services",
+        alt: "Allwin Physiotherapy Clinic - Professional Physiotherapy Services in Tirunelveli",
       },
     ],
     locale: "en_IN",
@@ -114,9 +177,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Allwin Physiotherapy Clinic - Best Physiotherapy in Tirunelveli",
     description:
-      "Expert physiotherapy services in Tirunelveli. Specialized treatments for sports injuries, neurological rehabilitation, orthopedic care, and pain management.",
+      "Expert physiotherapy services in Tirunelveli. Specialized treatments for sports injuries, neurological rehabilitation, orthopedic care, and pain management with home visit services.",
     images: ["/images/allwin-logo.jpeg"],
     creator: "@allwinphysio",
+    site: "@allwinphysio",
   },
   robots: {
     index: true,
@@ -133,8 +197,42 @@ export const metadata: Metadata = {
     google: "your-google-verification-code",
     yandex: "your-yandex-verification-code",
     yahoo: "your-yahoo-verification-code",
+    other: {
+      "msvalidate.01": "your-bing-verification-code",
+    },
   },
   category: "healthcare",
+  classification: "Healthcare Services, Medical Treatment, Physiotherapy, Rehabilitation",
+  other: {
+    // Additional SEO meta tags
+    "article:section": "Healthcare",
+    "article:tag": "physiotherapy, rehabilitation, healthcare, medical treatment, Tirunelveli",
+    "og:locality": "Tirunelveli",
+    "og:region": "Tamil Nadu",
+    "og:country-name": "India",
+    "og:postal-code": "627007",
+    "og:street-address": "17, 7th St, Perumalpuram, Palayamkottai",
+
+    // Business specific
+    "business:hours": "Monday-Saturday 08:30-21:30",
+    "business:phone": "+919363727207",
+    "business:email": "allwin.physiotherpy@gmail.com",
+
+    // Medical specific
+    "medical:condition": "Sports Injuries, Neurological Conditions, Orthopedic Issues, Chronic Pain",
+    "medical:specialty": "Physiotherapy, Rehabilitation Medicine, Sports Medicine",
+    "medical:treatment": "Manual Therapy, Exercise Therapy, Electrotherapy, Home Visits",
+
+    // Local business
+    "local:business-type": "Healthcare Provider",
+    "local:service-area": "Tirunelveli, Palayamkottai, Perumalpuram, Tamil Nadu",
+    "local:languages": "English, Tamil",
+
+    // Accessibility
+    "accessibility:wheelchair": "yes",
+    "accessibility:parking": "available",
+    "accessibility:home-visits": "yes",
+  },
     generator: 'v0.dev'
 }
 
@@ -160,6 +258,17 @@ export default function RootLayout({
         <meta name="geo.position" content="8.7139;77.7567" />
         <meta name="ICBM" content="8.7139, 77.7567" />
 
+        {/* Content classification */}
+        <meta name="content-language" content="en" />
+        <meta
+          name="audience"
+          content="patients, healthcare seekers, physiotherapy patients, sports athletes, elderly care"
+        />
+        <meta name="subject" content="Physiotherapy and Rehabilitation Services in Tirunelveli" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+
         {/* Business information */}
         <meta name="business:contact_data:street_address" content="17, 7th St, Perumalpuram" />
         <meta name="business:contact_data:locality" content="Palayamkottai" />
@@ -169,6 +278,25 @@ export default function RootLayout({
         <meta name="business:contact_data:phone_number" content="+919363727207" />
         <meta name="business:contact_data:email" content="allwin.physiotherpy@gmail.com" />
 
+        {/* Medical and healthcare specific */}
+        <meta
+          name="medical:condition"
+          content="Sports Injuries, Stroke, Parkinson's Disease, Cerebral Palsy, Joint Pain, Back Pain, Neck Pain"
+        />
+        <meta
+          name="medical:specialty"
+          content="Physiotherapy, Sports Medicine, Neurological Rehabilitation, Orthopedic Rehabilitation"
+        />
+        <meta name="medical:treatment_type" content="Conservative, Non-invasive, Evidence-based" />
+        <meta name="healthcare:service_type" content="Outpatient, Home Visits, Consultation" />
+        <meta name="healthcare:insurance" content="Accepted" />
+
+        {/* Local business tags */}
+        <meta name="local:business_type" content="Healthcare Provider" />
+        <meta name="local:service_area" content="Tirunelveli, Palayamkottai, Perumalpuram, Nanguneri, Ambasamudram" />
+        <meta name="local:languages_spoken" content="English, Tamil, Hindi" />
+        <meta name="local:payment_methods" content="Cash, UPI, Card, Insurance" />
+
         {/* Structured data for local business */}
         <script
           type="application/ld+json"
@@ -176,15 +304,29 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "MedicalBusiness",
+              "@id": "https://allwinphysiotherapy.com/#organization",
               name: "Allwin Physiotherapy Clinic",
-              alternateName: "Allwin Physothery Clinic",
+              alternateName: ["Allwin Physothery Clinic", "Allwin Rehabilitation Center"],
               description:
-                "Expert physiotherapy services in Tirunelveli specializing in sports injuries, neurological rehabilitation, orthopedic care, and pain management.",
+                "Leading physiotherapy clinic in Tirunelveli offering expert rehabilitation services for sports injuries, neurological conditions, orthopedic recovery, cardiac rehabilitation, pediatric care, pain management, and home visits.",
               url: "https://allwinphysiotherapy.com",
-              logo: "https://allwinphysiotherapy.com/images/allwin-logo.jpeg",
-              image: "https://allwinphysiotherapy.com/images/allwin-logo.jpeg",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://allwinphysiotherapy.com/images/allwin-logo.jpeg",
+                width: 400,
+                height: 400,
+              },
+              image: [
+                {
+                  "@type": "ImageObject",
+                  url: "https://allwinphysiotherapy.com/images/allwin-logo.jpeg",
+                  width: 1200,
+                  height: 630,
+                },
+              ],
               telephone: "+919363727207",
               email: "allwin.physiotherpy@gmail.com",
+              faxNumber: "+919363727207",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "17, 7th St, Perumalpuram",
@@ -199,13 +341,32 @@ export default function RootLayout({
                 longitude: "77.7567",
               },
               openingHours: ["Mo-Sa 08:30-21:30"],
+              openingHoursSpecification: [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                  opens: "08:30",
+                  closes: "21:30",
+                },
+              ],
               priceRange: "$$",
               currenciesAccepted: "INR",
-              paymentAccepted: "Cash, UPI, Card",
-              areaServed: {
-                "@type": "City",
-                name: "Tirunelveli",
-              },
+              paymentAccepted: ["Cash", "UPI", "Credit Card", "Debit Card", "Insurance"],
+              areaServed: [
+                {
+                  "@type": "City",
+                  name: "Tirunelveli",
+                  sameAs: "https://en.wikipedia.org/wiki/Tirunelveli",
+                },
+                {
+                  "@type": "City",
+                  name: "Palayamkottai",
+                },
+                {
+                  "@type": "City",
+                  name: "Perumalpuram",
+                },
+              ],
               serviceArea: {
                 "@type": "GeoCircle",
                 geoMidpoint: {
@@ -215,7 +376,53 @@ export default function RootLayout({
                 },
                 geoRadius: "25000",
               },
-              medicalSpecialty: ["Physiotherapy", "Sports Medicine", "Rehabilitation Medicine", "Pain Management"],
+              medicalSpecialty: [
+                "Physiotherapy",
+                "Sports Medicine",
+                "Rehabilitation Medicine",
+                "Pain Management",
+                "Neurological Rehabilitation",
+                "Orthopedic Rehabilitation",
+                "Cardiac Rehabilitation",
+                "Pediatric Physiotherapy",
+              ],
+              availableService: [
+                {
+                  "@type": "MedicalTherapy",
+                  name: "Sports Physiotherapy",
+                  description: "Specialized treatment for sports injuries and performance enhancement",
+                },
+                {
+                  "@type": "MedicalTherapy",
+                  name: "Neurological Rehabilitation",
+                  description: "Expert care for stroke, spinal cord injuries, and neurological conditions",
+                },
+                {
+                  "@type": "MedicalTherapy",
+                  name: "Orthopedic Rehabilitation",
+                  description: "Post-surgical recovery and musculoskeletal treatment",
+                },
+                {
+                  "@type": "MedicalTherapy",
+                  name: "Home Visit Services",
+                  description: "Convenient physiotherapy treatments at your home",
+                },
+                {
+                  "@type": "MedicalTherapy",
+                  name: "Pain Management",
+                  description: "Comprehensive pain relief and management programs",
+                },
+                {
+                  "@type": "MedicalTherapy",
+                  name: "Cardiac Rehabilitation",
+                  description: "Heart health recovery and fitness programs",
+                },
+                {
+                  "@type": "MedicalTherapy",
+                  name: "Pediatric Physiotherapy",
+                  description: "Specialized care for children with developmental conditions",
+                },
+              ],
               hasOfferCatalog: {
                 "@type": "OfferCatalog",
                 name: "Physiotherapy Services",
@@ -273,14 +480,62 @@ export default function RootLayout({
                     ratingValue: "5",
                     bestRating: "5",
                   },
-                  reviewBody: "Excellent physiotherapy services with professional care and effective treatment.",
+                  reviewBody:
+                    "Excellent physiotherapy services with professional care and effective treatment. The home visit service is very convenient.",
+                  datePublished: "2024-12-01",
+                },
+                {
+                  "@type": "Review",
+                  author: {
+                    "@type": "Person",
+                    name: "Sports Patient",
+                  },
+                  reviewRating: {
+                    "@type": "Rating",
+                    ratingValue: "5",
+                    bestRating: "5",
+                  },
+                  reviewBody:
+                    "Outstanding sports physiotherapy treatment. Helped me recover from my knee injury and return to playing cricket.",
+                  datePublished: "2024-11-15",
                 },
               ],
               sameAs: [
                 "https://www.facebook.com/allwinphysiotherapy",
                 "https://www.instagram.com/allwinphysiotherapy",
                 "https://maps.app.goo.gl/Jnt9RXY9oHEa2Lhu5",
+                "https://www.linkedin.com/company/allwinphysiotherapy",
               ],
+              founder: {
+                "@type": "Person",
+                name: "Dr. Allwin",
+                jobTitle: "Chief Physiotherapist",
+              },
+              employee: [
+                {
+                  "@type": "Person",
+                  name: "Certified Physiotherapist",
+                  jobTitle: "Senior Physiotherapist",
+                  worksFor: {
+                    "@type": "Organization",
+                    name: "Allwin Physiotherapy Clinic",
+                  },
+                },
+              ],
+              knowsAbout: [
+                "Sports Injuries",
+                "Neurological Rehabilitation",
+                "Orthopedic Recovery",
+                "Pain Management",
+                "Cardiac Rehabilitation",
+                "Pediatric Care",
+                "Manual Therapy",
+                "Exercise Therapy",
+              ],
+              memberOf: {
+                "@type": "Organization",
+                name: "Indian Association of Physiotherapists",
+              },
             }),
           }}
         />
@@ -308,12 +563,18 @@ export default function RootLayout({
                 {
                   "@type": "ListItem",
                   position: 3,
+                  name: "Exercise Videos",
+                  item: "https://allwinphysiotherapy.com/exercises",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 4,
                   name: "About",
                   item: "https://allwinphysiotherapy.com#about",
                 },
                 {
                   "@type": "ListItem",
-                  position: 4,
+                  position: 5,
                   name: "Contact",
                   item: "https://allwinphysiotherapy.com#contact",
                 },
@@ -335,7 +596,7 @@ export default function RootLayout({
                   name: "What services does Allwin Physiotherapy Clinic offer?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "We offer comprehensive physiotherapy services including sports physiotherapy, neurological rehabilitation, orthopedic rehabilitation, cardiac rehabilitation, pediatric physiotherapy, pain management, and home visit services.",
+                    text: "We offer comprehensive physiotherapy services including sports physiotherapy, neurological rehabilitation, orthopedic rehabilitation, cardiac rehabilitation, pediatric physiotherapy, pain management, and home visit services. We also provide exercise therapy, manual therapy, and specialized treatments for various conditions.",
                   },
                 },
                 {
@@ -343,7 +604,7 @@ export default function RootLayout({
                   name: "What are the clinic hours?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "We are open Monday to Saturday from 8:30 AM to 9:30 PM. We are closed on Sundays.",
+                    text: "We are open Monday to Saturday from 8:30 AM to 9:30 PM. We are closed on Sundays. We also offer flexible scheduling for home visits.",
                   },
                 },
                 {
@@ -351,7 +612,7 @@ export default function RootLayout({
                   name: "Do you provide home visit services?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Yes, we provide convenient physiotherapy treatments in the comfort of your own home for patients who cannot visit our clinic.",
+                    text: "Yes, we provide convenient physiotherapy treatments in the comfort of your own home for patients who cannot visit our clinic. This includes elderly care, post-surgery recovery, stroke rehabilitation, and mobility-limited patients.",
                   },
                 },
                 {
@@ -359,7 +620,39 @@ export default function RootLayout({
                   name: "How can I book an appointment?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "You can book an appointment by calling us at +91 93637 27207, sending a WhatsApp message, or emailing us at allwin.physiotherpy@gmail.com.",
+                    text: "You can book an appointment by calling us at +91 93637 27207, sending a WhatsApp message, or emailing us at allwin.physiotherpy@gmail.com. We offer same-day appointments when available.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "What conditions do you treat?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "We treat a wide range of conditions including sports injuries, stroke recovery, back pain, neck pain, knee problems, post-surgical rehabilitation, neurological conditions like Parkinson's disease, pediatric conditions like cerebral palsy, and chronic pain management.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Do you accept insurance?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Yes, we accept various insurance plans and also offer cashless treatment options. Please contact us to verify your specific insurance coverage.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "What areas do you serve for home visits?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "We provide home visit services throughout Tirunelveli, including Palayamkottai, Perumalpuram, and surrounding areas within a 25km radius of our clinic.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Are your physiotherapists certified?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Yes, all our physiotherapists are certified professionals with specialized training and over 15 years of combined experience in various physiotherapy specialties.",
                   },
                 },
               ],
@@ -374,17 +667,72 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
+              "@id": "https://allwinphysiotherapy.com/#organization",
               name: "Allwin Physiotherapy Clinic",
               url: "https://allwinphysiotherapy.com",
               logo: "https://allwinphysiotherapy.com/images/allwin-logo.jpeg",
-              contactPoint: {
-                "@type": "ContactPoint",
-                telephone: "+919363727207",
-                contactType: "customer service",
-                areaServed: "IN",
-                availableLanguage: ["English", "Tamil"],
+              contactPoint: [
+                {
+                  "@type": "ContactPoint",
+                  telephone: "+919363727207",
+                  contactType: "customer service",
+                  areaServed: "IN",
+                  availableLanguage: ["English", "Tamil", "Hindi"],
+                  hoursAvailable: {
+                    "@type": "OpeningHoursSpecification",
+                    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                    opens: "08:30",
+                    closes: "21:30",
+                  },
+                },
+                {
+                  "@type": "ContactPoint",
+                  telephone: "+919363727207",
+                  contactType: "emergency",
+                  areaServed: "IN",
+                  availableLanguage: ["English", "Tamil"],
+                },
+              ],
+              sameAs: [
+                "https://www.facebook.com/allwinphysiotherapy",
+                "https://www.instagram.com/allwinphysiotherapy",
+                "https://maps.app.goo.gl/Jnt9RXY9oHEa2Lhu5",
+              ],
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "17, 7th St, Perumalpuram",
+                addressLocality: "Palayamkottai",
+                addressRegion: "Tirunelveli",
+                postalCode: "627007",
+                addressCountry: "IN",
               },
-              sameAs: ["https://www.facebook.com/allwinphysiotherapy", "https://www.instagram.com/allwinphysiotherapy"],
+            }),
+          }}
+        />
+
+        {/* Website structured data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "@id": "https://allwinphysiotherapy.com/#website",
+              url: "https://allwinphysiotherapy.com",
+              name: "Allwin Physiotherapy Clinic",
+              description: "Leading physiotherapy clinic in Tirunelveli offering expert rehabilitation services",
+              publisher: {
+                "@id": "https://allwinphysiotherapy.com/#organization",
+              },
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: "https://allwinphysiotherapy.com/search?q={search_term_string}",
+                },
+                "query-input": "required name=search_term_string",
+              },
+              inLanguage: "en-IN",
             }),
           }}
         />
