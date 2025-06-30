@@ -1,0 +1,27 @@
+{
+  "name": "Allwin Physiotherapy Clinic",
+  "short_name": "Allwin Physio",
+  "description": "Expert physiotherapy services in Tirunelveli",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/allwin-logo.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/allwin-logo.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["health", "medical", "physiotherapy"],
+  "lang": "en",
+  "dir": "ltr"
+}

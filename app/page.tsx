@@ -18,10 +18,13 @@ import {
   Stethoscope,
   Award,
   ExternalLink,
+  Heart,
+  Play,
 } from "lucide-react"
 import { HeroCarousel } from "@/components/hero-carousel"
 import { ScrollAnimation } from "@/components/scroll-animation"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function PhysiotherapyHospital() {
   const services = [
@@ -29,45 +32,73 @@ export default function PhysiotherapyHospital() {
       icon: <Dumbbell className="w-8 h-8 text-blue-600" />,
       title: "Sports Physiotherapy",
       description:
-        "Specialized treatment for sports injuries, performance enhancement, and injury prevention for athletes.",
-      features: ["Injury Assessment", "Recovery Planning", "Performance Optimization"],
+        "Specialized treatment for sports injuries, performance enhancement, and injury prevention for athletes of all levels.",
+      features: ["Sports Injury Treatment", "Performance Enhancement", "Injury Prevention Programs"],
+      conditions: ["ACL/MCL Injuries", "Tennis Elbow", "Ankle Sprains", "Shoulder Impingement"],
+      link: "/services/sports-physiotherapy",
     },
     {
       icon: <Brain className="w-8 h-8 text-green-600" />,
       title: "Neurological Rehabilitation",
-      description: "Expert care for stroke, spinal cord injuries, and neurological conditions to restore function.",
+      description:
+        "Expert care for stroke, spinal cord injuries, Parkinson's disease, and other neurological conditions to restore function and independence.",
       features: ["Stroke Recovery", "Balance Training", "Motor Skills Development"],
+      conditions: ["Stroke", "Parkinson's Disease", "Spinal Cord Injuries", "Multiple Sclerosis"],
+      link: "/services/neurological-rehabilitation",
     },
     {
       icon: <Target className="w-8 h-8 text-purple-600" />,
       title: "Orthopedic Rehabilitation",
-      description: "Post-surgical recovery and treatment for musculoskeletal conditions and joint problems.",
+      description:
+        "Post-surgical recovery and treatment for musculoskeletal conditions, joint problems, and bone injuries.",
       features: ["Post-Surgery Care", "Joint Mobility", "Pain Management"],
+      conditions: ["Knee Replacement", "Hip Surgery", "Fracture Recovery", "Arthritis"],
+      link: "/services/orthopedic-rehabilitation",
     },
     {
       icon: <Activity className="w-8 h-8 text-red-600" />,
       title: "Cardiac Rehabilitation",
-      description: "Comprehensive cardiac recovery programs to improve heart health and overall fitness.",
+      description:
+        "Comprehensive cardiac recovery programs to improve heart health, fitness, and quality of life after cardiac events.",
       features: ["Exercise Programs", "Heart Health Monitoring", "Lifestyle Counseling"],
+      conditions: ["Post Heart Attack", "Heart Surgery", "Heart Failure", "Cardiac Procedures"],
+      link: "/services/cardiac-rehabilitation",
     },
     {
-      icon: <Activity className="w-8 h-8 text-orange-600" />,
+      icon: <Heart className="w-8 h-8 text-pink-600" />,
       title: "Pediatric Physiotherapy",
-      description: "Specialized care for children with developmental delays and physical challenges.",
-      features: ["Developmental Support", "Motor Skills Training", "Family Education"],
+      description:
+        "Specialized care for children with developmental delays, cerebral palsy, and physical challenges from birth to 18 years.",
+      features: ["Developmental Support", "Motor Skills Training", "Family Education", "Play-Based Therapy"],
+      conditions: ["Cerebral Palsy", "Developmental Delays", "Muscular Dystrophy", "Autism Spectrum"],
+      link: "/services/pediatric-physiotherapy",
     },
     {
       icon: <Shield className="w-8 h-8 text-teal-600" />,
       title: "Pain Management",
-      description: "Advanced techniques for chronic pain relief and improved quality of life.",
+      description:
+        "Advanced techniques for chronic pain relief including back pain, neck pain, joint pain, and fibromyalgia.",
       features: ["Chronic Pain Relief", "Manual Therapy", "Exercise Therapy"],
+      conditions: ["Back Pain", "Neck Pain", "Sciatica", "Fibromyalgia"],
+      link: "/services/pain-management",
     },
     {
       icon: <MapPin className="w-8 h-8 text-indigo-600" />,
       title: "Home Visit Services",
       description:
-        "Convenient physiotherapy treatments in the comfort of your own home for patients who cannot visit our clinic.",
+        "Convenient physiotherapy treatments in the comfort of your own home for elderly, post-surgery, and mobility-limited patients.",
       features: ["In-Home Assessment", "Personalized Treatment", "Flexible Scheduling"],
+      conditions: ["Elderly Care", "Post-Surgery", "Stroke Recovery", "Mobility Issues"],
+      link: "/services/home-visits",
+    },
+    {
+      icon: <Play className="w-8 h-8 text-orange-600" />,
+      title: "Exercise Videos",
+      description:
+        "Professional exercise demonstrations and guidance for effective home rehabilitation and pain management.",
+      features: ["Video Demonstrations", "Step-by-Step Instructions", "Safety Guidelines"],
+      conditions: ["Back Pain Exercises", "Neck Exercises", "Knee Strengthening", "Posture Correction"],
+      link: "/exercises",
     },
   ]
 
@@ -109,6 +140,9 @@ export default function PhysiotherapyHospital() {
               >
                 Services
               </a>
+              <Link href="/exercises" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
+                Exercises
+              </Link>
               <a
                 href="#about"
                 onClick={(e) => {
@@ -198,17 +232,34 @@ export default function PhysiotherapyHospital() {
                       <CardDescription className="text-gray-600 leading-relaxed">{service.description}</CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <div className="space-y-2">
-                        {service.features.map((feature, featureIndex) => (
-                          <div key={featureIndex} className="flex items-center space-x-2">
-                            <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                            <span className="text-sm text-gray-700">{feature}</span>
+                      <div className="space-y-4">
+                        <div>
+                          <h4 className="font-semibold text-sm text-gray-800 mb-2">Key Features:</h4>
+                          <div className="space-y-2">
+                            {service.features.map((feature, featureIndex) => (
+                              <div key={featureIndex} className="flex items-center space-x-2">
+                                <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                                <span className="text-sm text-gray-700">{feature}</span>
+                              </div>
+                            ))}
                           </div>
-                        ))}
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-sm text-gray-800 mb-2">Conditions Treated:</h4>
+                          <div className="flex flex-wrap gap-1">
+                            {service.conditions.map((condition, conditionIndex) => (
+                              <Badge key={conditionIndex} variant="outline" className="text-xs">
+                                {condition}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
                       </div>
-                      <Button variant="outline" className="w-full mt-6">
-                        Learn More
-                      </Button>
+                      <Link href={service.link}>
+                        <Button variant="outline" className="w-full mt-6 bg-transparent">
+                          {service.title === "Exercise Videos" ? "Watch Videos" : "Learn More"}
+                        </Button>
+                      </Link>
                     </CardContent>
                   </Card>
                 </ScrollAnimation>
