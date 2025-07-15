@@ -25,6 +25,8 @@ import { HeroCarousel } from "@/components/hero-carousel"
 import { ScrollAnimation } from "@/components/scroll-animation"
 import Image from "next/image"
 import Link from "next/link"
+import { LocalSEOContent } from "@/components/local-seo-content"
+import { LocalBusinessInfo } from "@/components/local-business-info"
 
 export default function PhysiotherapyHospital() {
   const services = [
@@ -271,7 +273,7 @@ export default function PhysiotherapyHospital() {
 
       {/* About Section */}
       <ScrollAnimation>
-        <section id="about" className="py-20 bg-white">
+        <section id="about" className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <ScrollAnimation animation="fadeInLeft">
@@ -328,6 +330,16 @@ export default function PhysiotherapyHospital() {
             </div>
           </div>
         </section>
+      </ScrollAnimation>
+
+      {/* Local SEO Content */}
+      <ScrollAnimation>
+        <LocalSEOContent />
+      </ScrollAnimation>
+
+      {/* Local Business Info */}
+      <ScrollAnimation>
+        <LocalBusinessInfo />
       </ScrollAnimation>
 
       {/* Contact Section */}

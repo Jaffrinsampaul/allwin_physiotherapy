@@ -711,7 +711,18 @@ export default function RootLayout({
         />
 
         {/* Website structured data */}
-       aiotherapy.com/#organization",
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "@id": "https://allwinphysiotherapy.com/#website",
+              url: "https://allwinphysiotherapy.com",
+              name: "Allwin Physiotherapy Clinic",
+              description: "Leading physiotherapy clinic in Tirunelveli offering expert rehabilitation services",
+              publisher: {
+                "@id": "https://allwinphysiotherapy.com/#organization",
               },
               potentialAction: {
                 "@type": "SearchAction",
@@ -722,6 +733,575 @@ export default function RootLayout({
                 "query-input": "required name=search_term_string",
               },
               inLanguage: "en-IN",
+            }),
+          }}
+        />
+
+        {/* Enhanced Local Business structured data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "MedicalBusiness",
+              "@id": "https://allwinphysiotherapy.com/#localbusiness",
+              name: "Allwin Physiotherapy Clinic",
+              alternateName: ["Allwin Physio Clinic", "Allwin Rehabilitation Center", "Allwin Physiotherapy Hospital"],
+              description:
+                "Leading physiotherapy clinic in Tirunelveli offering expert rehabilitation services for sports injuries, neurological conditions, orthopedic recovery, cardiac rehabilitation, pediatric care, pain management, and home visits. Serving Palayamkottai, Perumalpuram, and surrounding areas.",
+              url: "https://allwinphysiotherapy.com",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://allwinphysiotherapy.com/images/allwin-logo.jpeg",
+                width: 400,
+                height: 400,
+              },
+              image: [
+                {
+                  "@type": "ImageObject",
+                  url: "https://allwinphysiotherapy.com/images/allwin-logo.jpeg",
+                  width: 1200,
+                  height: 630,
+                },
+              ],
+              telephone: "+919363727207",
+              email: "allwin.physiotherpy@gmail.com",
+              faxNumber: "+919363727207",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "17, 7th St, Perumalpuram",
+                addressLocality: "Palayamkottai",
+                addressRegion: "Tirunelveli District",
+                postalCode: "627007",
+                addressCountry: "IN",
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: "8.7139",
+                longitude: "77.7567",
+              },
+              hasMap: "https://maps.app.goo.gl/Jnt9RXY9oHEa2Lhu5",
+              openingHours: ["Mo-Sa 08:30-21:30"],
+              openingHoursSpecification: [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                  opens: "08:30",
+                  closes: "21:30",
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: "Sunday",
+                  opens: "00:00",
+                  closes: "00:00",
+                  validFrom: "2024-01-01",
+                  validThrough: "2024-12-31",
+                },
+              ],
+              priceRange: "₹₹",
+              currenciesAccepted: "INR",
+              paymentAccepted: [
+                "Cash",
+                "UPI",
+                "Credit Card",
+                "Debit Card",
+                "Insurance",
+                "Paytm",
+                "Google Pay",
+                "PhonePe",
+              ],
+              areaServed: [
+                {
+                  "@type": "City",
+                  name: "Tirunelveli",
+                  sameAs: "https://en.wikipedia.org/wiki/Tirunelveli",
+                },
+                {
+                  "@type": "City",
+                  name: "Palayamkottai",
+                  sameAs: "https://en.wikipedia.org/wiki/Palayamkottai",
+                },
+                {
+                  "@type": "City",
+                  name: "Perumalpuram",
+                },
+                {
+                  "@type": "City",
+                  name: "Nanguneri",
+                },
+                {
+                  "@type": "City",
+                  name: "Ambasamudram",
+                },
+                {
+                  "@type": "City",
+                  name: "Kallidaikurichi",
+                },
+                {
+                  "@type": "City",
+                  name: "Cheranmahadevi",
+                },
+                {
+                  "@type": "City",
+                  name: "Radhapuram",
+                },
+              ],
+              serviceArea: {
+                "@type": "GeoCircle",
+                geoMidpoint: {
+                  "@type": "GeoCoordinates",
+                  latitude: "8.7139",
+                  longitude: "77.7567",
+                },
+                geoRadius: "25000",
+              },
+              medicalSpecialty: [
+                "Physiotherapy",
+                "Sports Medicine",
+                "Rehabilitation Medicine",
+                "Pain Management",
+                "Neurological Rehabilitation",
+                "Orthopedic Rehabilitation",
+                "Cardiac Rehabilitation",
+                "Pediatric Physiotherapy",
+                "Geriatric Physiotherapy",
+                "Manual Therapy",
+                "Exercise Therapy",
+              ],
+              availableService: [
+                {
+                  "@type": "MedicalTherapy",
+                  name: "Sports Physiotherapy",
+                  description:
+                    "Specialized treatment for sports injuries and performance enhancement for athletes in Tirunelveli",
+                  serviceType: "Sports Medicine",
+                  areaServed: "Tirunelveli District",
+                },
+                {
+                  "@type": "MedicalTherapy",
+                  name: "Neurological Rehabilitation",
+                  description: "Expert stroke recovery and neurological condition treatment in Palayamkottai",
+                  serviceType: "Neurological Rehabilitation",
+                  areaServed: "Tirunelveli District",
+                },
+                {
+                  "@type": "MedicalTherapy",
+                  name: "Orthopedic Rehabilitation",
+                  description: "Post-surgical recovery and joint replacement rehabilitation in Tirunelveli",
+                  serviceType: "Orthopedic Rehabilitation",
+                  areaServed: "Tirunelveli District",
+                },
+                {
+                  "@type": "MedicalTherapy",
+                  name: "Home Visit Physiotherapy",
+                  description:
+                    "Convenient physiotherapy treatments at home across Tirunelveli, Palayamkottai, and Perumalpuram",
+                  serviceType: "Home Healthcare",
+                  areaServed: "Tirunelveli District",
+                },
+                {
+                  "@type": "MedicalTherapy",
+                  name: "Pain Management",
+                  description: "Chronic pain relief and management programs in Tirunelveli",
+                  serviceType: "Pain Management",
+                  areaServed: "Tirunelveli District",
+                },
+                {
+                  "@type": "MedicalTherapy",
+                  name: "Cardiac Rehabilitation",
+                  description: "Heart recovery and fitness programs in Tirunelveli",
+                  serviceType: "Cardiac Rehabilitation",
+                  areaServed: "Tirunelveli District",
+                },
+                {
+                  "@type": "MedicalTherapy",
+                  name: "Pediatric Physiotherapy",
+                  description: "Specialized care for children with developmental conditions in Tirunelveli",
+                  serviceType: "Pediatric Care",
+                  areaServed: "Tirunelveli District",
+                },
+              ],
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Physiotherapy Services in Tirunelveli",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "MedicalProcedure",
+                      name: "Sports Physiotherapy Consultation",
+                      description: "Initial assessment and treatment plan for sports injuries",
+                    },
+                    price: "500",
+                    priceCurrency: "INR",
+                    availability: "https://schema.org/InStock",
+                    areaServed: "Tirunelveli District",
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "MedicalProcedure",
+                      name: "Home Visit Physiotherapy",
+                      description: "Physiotherapy treatment at patient's home",
+                    },
+                    price: "800",
+                    priceCurrency: "INR",
+                    availability: "https://schema.org/InStock",
+                    areaServed: "Tirunelveli District",
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "MedicalProcedure",
+                      name: "Neurological Rehabilitation Session",
+                      description: "Specialized therapy for stroke and neurological conditions",
+                    },
+                    price: "600",
+                    priceCurrency: "INR",
+                    availability: "https://schema.org/InStock",
+                    areaServed: "Tirunelveli District",
+                  },
+                ],
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.9",
+                reviewCount: "150",
+                bestRating: "5",
+                worstRating: "1",
+              },
+              review: [
+                {
+                  "@type": "Review",
+                  author: {
+                    "@type": "Person",
+                    name: "Rajesh Kumar",
+                    address: {
+                      "@type": "PostalAddress",
+                      addressLocality: "Palayamkottai",
+                      addressRegion: "Tirunelveli",
+                    },
+                  },
+                  reviewRating: {
+                    "@type": "Rating",
+                    ratingValue: "5",
+                    bestRating: "5",
+                  },
+                  reviewBody:
+                    "Excellent physiotherapy services in Tirunelveli. The home visit service is very convenient and professional. Dr. Allwin provided excellent treatment for my back pain.",
+                  datePublished: "2024-12-01",
+                },
+                {
+                  "@type": "Review",
+                  author: {
+                    "@type": "Person",
+                    name: "Priya Sharma",
+                    address: {
+                      "@type": "PostalAddress",
+                      addressLocality: "Perumalpuram",
+                      addressRegion: "Tirunelveli",
+                    },
+                  },
+                  reviewRating: {
+                    "@type": "Rating",
+                    ratingValue: "5",
+                    bestRating: "5",
+                  },
+                  reviewBody:
+                    "Best physiotherapy clinic in Tirunelveli. Outstanding sports physiotherapy treatment helped me recover from my knee injury and return to playing badminton.",
+                  datePublished: "2024-11-15",
+                },
+                {
+                  "@type": "Review",
+                  author: {
+                    "@type": "Person",
+                    name: "Murugan S",
+                    address: {
+                      "@type": "PostalAddress",
+                      addressLocality: "Nanguneri",
+                      addressRegion: "Tirunelveli",
+                    },
+                  },
+                  reviewRating: {
+                    "@type": "Rating",
+                    ratingValue: "5",
+                    bestRating: "5",
+                  },
+                  reviewBody:
+                    "Excellent stroke rehabilitation services. The team at Allwin Physiotherapy helped my father recover significantly after his stroke. Highly recommend their neurological rehabilitation program.",
+                  datePublished: "2024-10-20",
+                },
+              ],
+              sameAs: [
+                "https://www.facebook.com/allwinphysiotherapy",
+                "https://www.instagram.com/allwinphysiotherapy",
+                "https://maps.app.goo.gl/Jnt9RXY9oHEa2Lhu5",
+                "https://www.linkedin.com/company/allwinphysiotherapy",
+                "https://www.youtube.com/@allwinphysiotherapy",
+              ],
+              founder: {
+                "@type": "Person",
+                name: "Dr. Allwin",
+                jobTitle: "Chief Physiotherapist",
+                worksFor: {
+                  "@type": "Organization",
+                  name: "Allwin Physiotherapy Clinic",
+                },
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Tirunelveli",
+                  addressRegion: "Tamil Nadu",
+                  addressCountry: "IN",
+                },
+              },
+              employee: [
+                {
+                  "@type": "Person",
+                  name: "Dr. Allwin",
+                  jobTitle: "Chief Physiotherapist",
+                  worksFor: {
+                    "@type": "Organization",
+                    name: "Allwin Physiotherapy Clinic",
+                  },
+                  hasCredential: {
+                    "@type": "EducationalOccupationalCredential",
+                    credentialCategory: "degree",
+                    recognizedBy: {
+                      "@type": "Organization",
+                      name: "Tamil Nadu Dr. M.G.R. Medical University",
+                    },
+                  },
+                },
+                {
+                  "@type": "Person",
+                  name: "Senior Physiotherapist",
+                  jobTitle: "Senior Physiotherapist",
+                  worksFor: {
+                    "@type": "Organization",
+                    name: "Allwin Physiotherapy Clinic",
+                  },
+                },
+              ],
+              knowsAbout: [
+                "Sports Injuries Treatment Tirunelveli",
+                "Stroke Rehabilitation Palayamkottai",
+                "Knee Replacement Recovery Tirunelveli",
+                "Back Pain Treatment Perumalpuram",
+                "Pediatric Physiotherapy Tirunelveli",
+                "Home Visit Physiotherapy",
+                "Manual Therapy Techniques",
+                "Exercise Therapy Programs",
+                "Cardiac Rehabilitation",
+                "Pain Management",
+              ],
+              memberOf: [
+                {
+                  "@type": "Organization",
+                  name: "Indian Association of Physiotherapists",
+                },
+                {
+                  "@type": "Organization",
+                  name: "Tamil Nadu Physiotherapy Association",
+                },
+              ],
+              isAccessibleForFree: false,
+              smokingAllowed: false,
+              hasWiFi: true,
+              acceptsReservations: true,
+              wheelchairAccessible: true,
+            }),
+          }}
+        />
+
+        {/* Service Area structured data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              name: "Physiotherapy Services in Tirunelveli District",
+              provider: {
+                "@type": "MedicalBusiness",
+                name: "Allwin Physiotherapy Clinic",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "17, 7th St, Perumalpuram",
+                  addressLocality: "Palayamkottai",
+                  addressRegion: "Tirunelveli",
+                  postalCode: "627007",
+                  addressCountry: "IN",
+                },
+              },
+              areaServed: [
+                {
+                  "@type": "City",
+                  name: "Tirunelveli",
+                  containedInPlace: {
+                    "@type": "State",
+                    name: "Tamil Nadu",
+                  },
+                },
+                {
+                  "@type": "City",
+                  name: "Palayamkottai",
+                  containedInPlace: {
+                    "@type": "City",
+                    name: "Tirunelveli",
+                  },
+                },
+                {
+                  "@type": "City",
+                  name: "Perumalpuram",
+                  containedInPlace: {
+                    "@type": "City",
+                    name: "Tirunelveli",
+                  },
+                },
+                {
+                  "@type": "City",
+                  name: "Nanguneri",
+                  containedInPlace: {
+                    "@type": "State",
+                    name: "Tamil Nadu",
+                  },
+                },
+                {
+                  "@type": "City",
+                  name: "Ambasamudram",
+                  containedInPlace: {
+                    "@type": "State",
+                    name: "Tamil Nadu",
+                  },
+                },
+              ],
+              serviceType: "Healthcare",
+              category: "Physiotherapy and Rehabilitation",
+            }),
+          }}
+        />
+
+        {/* Local FAQ structured data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "Where is Allwin Physiotherapy Clinic located in Tirunelveli?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Allwin Physiotherapy Clinic is located at 17, 7th St, Perumalpuram, Palayamkottai, Tirunelveli, Tamil Nadu 627007. We are easily accessible from all parts of Tirunelveli district including Nanguneri, Ambasamudram, and surrounding areas.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Do you provide physiotherapy services in Palayamkottai and Perumalpuram?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Yes, we are located in Perumalpuram, Palayamkottai and provide comprehensive physiotherapy services to residents of both areas. We also offer home visit services throughout Tirunelveli district.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "What areas in Tirunelveli do you serve for home visits?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "We provide home visit physiotherapy services throughout Tirunelveli district including Palayamkottai, Perumalpuram, Nanguneri, Ambasamudram, Kallidaikurichi, Cheranmahadevi, Radhapuram, and surrounding areas within 25km radius.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Are you the best physiotherapy clinic in Tirunelveli?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "We are one of the leading physiotherapy clinics in Tirunelveli with over 15 years of experience, certified physiotherapists, and a 4.9-star rating from 150+ patients. We specialize in sports physiotherapy, neurological rehabilitation, and home visit services.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "How far is your clinic from Tirunelveli Junction?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Our clinic is approximately 3km from Tirunelveli Junction, easily accessible by auto-rickshaw, bus, or car. We are located in the heart of Palayamkottai for convenient access from all parts of Tirunelveli.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Do you treat patients from nearby towns like Nanguneri and Ambasamudram?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Yes, we welcome patients from Nanguneri, Ambasamudram, Kallidaikurichi, Cheranmahadevi, and all surrounding towns. We also provide home visit services to these areas for patients who cannot travel to our clinic.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "What makes you different from other physiotherapy clinics in Tirunelveli?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "We offer specialized services including sports physiotherapy, neurological rehabilitation, pediatric care, cardiac rehabilitation, and comprehensive home visit services. Our certified physiotherapists have 15+ years experience and we use evidence-based treatment approaches.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Do you provide emergency physiotherapy services in Tirunelveli?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Yes, we provide emergency physiotherapy consultations and can arrange urgent home visits for acute conditions. Call +91 93637 27207 for emergency physiotherapy services in Tirunelveli district.",
+                  },
+                },
+              ],
+            }),
+          }}
+        />
+
+        {/* Local landmarks and directions */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Place",
+              name: "Allwin Physiotherapy Clinic",
+              description: "Leading physiotherapy clinic in Tirunelveli located near major landmarks",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "17, 7th St, Perumalpuram",
+                addressLocality: "Palayamkottai",
+                addressRegion: "Tirunelveli",
+                postalCode: "627007",
+                addressCountry: "IN",
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: "8.7139",
+                longitude: "77.7567",
+              },
+              nearbyAttractions: [
+                {
+                  "@type": "Place",
+                  name: "Palayamkottai Bus Stand",
+                  description: "2km from clinic",
+                },
+                {
+                  "@type": "Place",
+                  name: "Tirunelveli Medical College",
+                  description: "4km from clinic",
+                },
+                {
+                  "@type": "Place",
+                  name: "Nellaiappar Temple",
+                  description: "5km from clinic",
+                },
+                {
+                  "@type": "Place",
+                  name: "Tirunelveli Junction Railway Station",
+                  description: "3km from clinic",
+                },
+              ],
             }),
           }}
         />
