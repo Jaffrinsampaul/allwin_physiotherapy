@@ -737,7 +737,7 @@ export default function RootLayout({
           }}
         />
       </head>
-       <Script
+       <script
           id="openwidget-script" // A unique ID for the script
           strategy="afterInteractive" // Recommended for chat widgets
           dangerouslySetInnerHTML={{
