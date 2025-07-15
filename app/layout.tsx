@@ -711,18 +711,7 @@ export default function RootLayout({
         />
 
         {/* Website structured data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "@id": "https://allwinphysiotherapy.com/#website",
-              url: "https://allwinphysiotherapy.com",
-              name: "Allwin Physiotherapy Clinic",
-              description: "Leading physiotherapy clinic in Tirunelveli offering expert rehabilitation services",
-              publisher: {
-                "@id": "https://allwinphysiotherapy.com/#organization",
+       aiotherapy.com/#organization",
               },
               potentialAction: {
                 "@type": "SearchAction",
