@@ -55,7 +55,7 @@ const slides = [
 export function HeroCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [animating, setAnimating] = useState(false)
-  const [direction, setDirection] = useState("next") // "next" or "prev"
+  const [direction, setDirection] = useState<"next" | "prev">("next") // "next" or "prev"
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -64,7 +64,7 @@ export function HeroCarousel() {
     return () => clearInterval(timer)
   }, [])
 
-  const changeSlide = (newDirection, indexFn) => {
+  const changeSlide = (newDirection: "next" | "prev", indexFn: (previousSlide: number) => number) => {
     if (animating) return
 
     setAnimating(true)
