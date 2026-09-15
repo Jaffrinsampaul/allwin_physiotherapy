@@ -1,11 +1,24 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef, type ReactNode } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ChevronLeft, ChevronRight, Phone, Heart, Brain, Dumbbell, Target } from "lucide-react"
 
-const slides = [
+type Direction = "next" | "prev"
+
+interface Slide {
+  badge: string
+  title: string
+  subtitle: string
+  description: string
+  icon: ReactNode
+  iconBg: string
+  iconTitle: string
+  iconDesc: string
+}
+
+const slides: Slide[] = [
   {
     badge: "Trusted Healthcare Partner",
     title: "Your Journey to Recovery Starts Here",
@@ -53,19 +66,19 @@ const slides = [
 ]
 
 export function HeroCarousel() {
-  const [currentSlide, setCurrentSlide] = useState(0)
-  const [animating, setAnimating] = useState(false)
-  const [direction, setDirection] = useState("next") // "next" or "prev"
+  const [currentSlide, setCurrentSlide] = useState<number>(0)
+  const [animating, setAnimating] = useState<boolean>(false)
+  const [direction, setDirection] = useState<Direction>("next")
 
+  // Ref mirrors `animating` so the interval callback always reads the
+  // latest value instead of the one captured when the effect first ran.
+  const animatingRef = useRef(animating)
   useEffect(() => {
-    const timer = setInterval(() => {
-      changeSlide("next", (prev:any) => (prev + 1) % slides.length)
-    }, 5000)
-    return () => clearInterval(timer)
-  }, [])
+    animatingRef.current = animating
+  }, [animating])
 
-  const changeSlide = (newDirection, indexFn) => {
-    if (animating) return
+  const changeSlide = (newDirection: Direction, indexFn: (prev: number) => number) => {
+    if (animatingRef.current) return
 
     setAnimating(true)
     setDirection(newDirection)
@@ -80,6 +93,13 @@ export function HeroCarousel() {
       }, 500) // Match this with the CSS transition duration
     }, 50)
   }
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      changeSlide("next", (prev) => (prev + 1) % slides.length)
+    }, 5000)
+    return () => clearInterval(timer)
+  }, [])
 
   const nextSlide = () => {
     changeSlide("next", (prev) => (prev + 1) % slides.length)
